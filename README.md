@@ -46,6 +46,7 @@ at the moment)
 [![OpenCV-version](https://img.shields.io/badge/OpenCV-4.0.1-brightgreen)](https://pypi.org/project/opencv-python/)
 [![Pandas-version](https://img.shields.io/badge/Pandas-1.0.3-brightgreen)](https://pandas.pydata.org/)
 [![numpy-version](https://img.shields.io/badge/Numpy-1.18.1-brightgreen)](https://pypi.org/project/numpy/)
+[![ipythonjupyter-version](https://img.shields.io/badge/Ipython-7.13-brightgreen)](https://jupyter.org/install)
 [![Matplotlib-version](https://img.shields.io/badge/Matplotlib-3.1.3-brightgreen)](https://matplotlib.org/3.2.1/users/installing.html)
 [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-0366d6.svg)](http://commonmark.org)
 [![contributors](https://img.shields.io/badge/Contributors-01-0366d6)](https://github.com/Sudharsan10/travelling-salesman-problem-neural-network/graphs/contributors)
@@ -92,6 +93,9 @@ This app depends on ```numpy```, ```matplotlib```, ```OpenCV``` and ```pandas```
     
     > ```shell script
     > pip install matplotlib 
+    > 
+    > ```shell script
+    > pip install jupyterlab
     > ```
     Note: If you have both python2 and python3 installed replace ```pip``` with ```pip3``` when using python3. In case you need to install
     ```pip``` follow this [link](#https://pip.pypa.io/en/stable/installing/) to get ```pip``` setup before running the above commands.
