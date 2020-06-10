@@ -142,10 +142,19 @@ salesman problem, example
 
 ### 4 SOM 1D Class methods<a id='som1d'></a>
 
-### 4 Utility.py<a id='utility_py'></a>
+### 5 Utility.py<a id='utility_py'></a>
 
-### 4 Notebooks<a id='notebooks'></a>
-<img src=".\img\node.png" width="100%" />
+### 6 Notebooks<a id='notebooks'></a>
+You find the ```tsp_som.ipynb``` in the following dir show below, 
+```text
+(root folder)/
+...
+├── notebooks/ 
+|   └── tsp_som.ipynb
+...
+```
+With this file you can tweak the main section code or if needed with actual algorithm as per your desire to modify or experiment 
+with custom code and see the outputs.
 
 
 ## Bugs and feature requests

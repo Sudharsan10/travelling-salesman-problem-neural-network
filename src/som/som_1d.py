@@ -19,7 +19,6 @@ class SOM_1D(SOM):
         -> initializer()                : A function to initialise all the required parameters to perform 1D SOM fitting
         -> compute_neighbourhood_prob() : A function to compute the gaussian probability for neighbourhood in 1D
         -> fit()                        : A function to perform 1D SOM fitting to the given data
-        -> save_data()                  : A function to set the object's save data flags
     """
 
     def __init__(self):

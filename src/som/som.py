@@ -99,5 +99,3 @@ class SOM:
 
         """
         return self.neighbors_radius_const * np.exp(-current_epoch / self.time_const)
-
-
