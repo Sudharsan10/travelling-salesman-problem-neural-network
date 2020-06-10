@@ -8,8 +8,6 @@
 # ---------------------------------------------------------------------------------------------------------------------- #
 import cv2
 import glob
-import numpy as np
-import pandas as pd
 import matplotlib.pyplot as plt
 from src.som.som_1d import *
 
@@ -77,17 +75,43 @@ def save_data(data: list or np.array, path: str, file_name: str = 'data', file_f
         print('file format is not supported, try something else')
 
 
+def load_data(path: str, file_name: str, file_format: str = 'csv') -> np.array:
+    """
+
+    Args:
+        file_format: str
+            File format type
+        path: str
+            Path to the file
+        file_name:
+            name of the file
+
+    Returns: np.array
+        Returns the loaded data
+    """
+    if file_format == 'csv':
+        return pd.read_csv(path + file_name).to_numpy()[:, 1:]
+    else:
+        print('file format is not supported, try something else')
+
+
 def visualize_data(obj: SOM_1D, title: str) -> None:
+    fig = plt.figure(figsize=(10, 10))
     data, = plt.plot(obj.data[:, 0], obj.data[:, 1], 'ro')
     weights, = plt.plot(obj.weights[:, 0], obj.weights[:, 1], 'b.')
-    if obj.looper:
+    if obj.loop_path:
         path, = plt.plot(obj.weights[:, 0], obj.weights[:, 1], 'y--')
         plt.plot([obj.weights[0, 0], obj.weights[-1, 0]], [obj.weights[0, 1], obj.weights[-1, 1]], 'y--')
     else:
         path, = plt.plot(obj.weights[:, 0], obj.weights[:, 1], 'y--')
     plt.legend([data, weights, path], ['Data', 'Weights', 'Path'])
+    plt.title('Solution to Travelling Salesman Problem')
+    plt.savefig('../results/output/solution.png')
     plt.show()
 
 
 if __name__ == "__main__":
-    pass
+    data1 = np.array([[0.2, 0.1], [0.15, 0.2], [0.4, 0.45], [0.2, 0.77], [0.5, 0.9],
+                      [0.83, 0.65], [0.7, 0.5], [0.82, 0.35], [0.65, 0.23], [0.6, 0.28]])
+    save_data(data1, '../../', '1')
+    x = load_data('../../models/weights/', '1')
