@@ -34,7 +34,7 @@ There are two ways to run this app:
 - [Download the latest Docker container.]() and run from the app in that container ( Note: No Docker container is available 
 at the moment)
 - Clone the repo: 
-    > ```shell script
+    > ```
     > git clone https://github.com/Sudharsan10/travelling-salesman-problem-neural-network.git
     > ```
     
@@ -83,39 +83,42 @@ You'll see something like this:
 This app depends on ```numpy```, ```matplotlib```, ```OpenCV``` and ```pandas``` libraries. We can setup this up using pip installer or conda virtual environment tool.
 
 - setting up using pip installer
-    > ```shell script
+    > ```
     > pip install numpy
     >```
     
-    > ```shell script
+    > ```
     > pip install pandas 
     > ```
     
-    > ```shell script
+    > ```
     > pip install matplotlib 
-    > 
-    > ```shell script
+    >
     > pip install jupyterlab
     > ```
+    
     Note: If you have both python2 and python3 installed replace ```pip``` with ```pip3``` when using python3. In case you need to install
     ```pip``` follow this [link](#https://pip.pypa.io/en/stable/installing/) to get ```pip``` setup before running the above commands.
     
-- setting up using conda environment for ```python3```     
-    > ```shell script
+- setting up using conda environment for ```python3```   
+
+    >```
     > conda install -c anaconda numpy matplotlib pandas Opencv
     >```
+    
     Note: To install and setup anaconda environment follow this [link](#https://docs.anaconda.com/anaconda/install/) first and visit this section again after successfully setting up the conda environment.
 
 ## Run instructions
 To run the app, first finish the pre-requisites mentioned, then
 1. Clone the repo in terminal using following command: 
-    > ```shell script
+    > ```
     > git clone https://github.com/Sudharsan10/travelling-salesman-problem-neural-network.git
     > ```
+    
     or download github repo as ```.zip``` and extract it in the desired location.
     
 2. In terminal navigate to the root folder abd locate the ```setup.py``` file and run the following command:
-    > ```shell script
+    > ```
     > python setup.py
     > ```
 
