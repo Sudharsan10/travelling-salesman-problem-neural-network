@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/Sudharsan10/travelling-salesman-problem-neural-network">
-    <img src=".\img\project_social_card01.png" alt="Social-header">
+    <img src=".\img\card.png" alt="Social-header">
   </a>  
 </p>
 
